@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- a section showing the page metadata and the exten files attached  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Stock TRading system">
+    <meta name="description" content="A website providing platform for stock trading practice">
+    <meta name="keywords" content="stocks, sell, buy">
+    <title>Stock Trading System</title>
+    <link rel="stylesheet" href="trade.css">
+</head>
+<body style="background-color: white;">
+    <!-- header section with the dominating title and the navigation list items  -->
+    <header>
+        <h1>INVEST SMARTER: Your one-stop shop for trading stocks</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="trade.css">Mutual Funds</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="buystock.html">Buy</a></li>
+                <li><a href="sellstock.html">Sell</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+                <li class="right"><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- The main section  -->
+    <div id =  'main_options'>
+        <div id = 'stocks' onclick="stocks()">
+            <p id = 'sp'>Stocks</p>
+            <div id = 'bars' class = 'dbar'>
+
+            </div> 
+        </div>
+
+        <div id = 'MutaulFunds' onclick="MutaulFunds()">
+            <p id = 'mp' class = 'color'>Mutal Funds</p>
+            <div id = 'barm' class = 'bar'>
+
+            </div> 
+        </div>
+
+        <div id = 'fixed_deposits' >
+            <p id = 'fp'>Fixed Deposit</p>
+            <div id = 'barf' class = 'dbar'>
+
+            </div> 
+        </div>
+
+        <div id = 'Gold' >
+            <p id = 'gp'>Gold</p>
+            <div id = 'barg' class = 'dbar'>
+
+            </div> 
+        </div>
+
+
+        <div id = 'us' >
+            <p id = 'up'>US Stocks</p>
+            <div id = 'baru' class = 'dbar'>
+
+            </div> 
+        </div>
+     
+
+        
+    </div>
+    <hr>
+
+
+
+
+    <div id='icon-headers'>
+        <p> Popular Funds </p>
+        <a > SEE ALL MUTUAL FUNDS </a>
+    </div>
+
+    <div class="mutual-funds-in">
+        <div class="mutual-funds-gridL">
+          
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/icici icon.svg" >
+                <p> ICICI Prudential Technology Direc...</p>
+                <p> 31.8% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/axis icon.svg" alt="">
+                <p> Axis Small Cap Fund Direct Growth </p>
+                <p> 24.6% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/parag icon.svg" alt="">
+                <p> Parag Parikh Flexi Cap Fund Direct... </p>
+                <p> 21.8% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/tata icon.svg" alt="">
+                <p> Tata Digital India Fund Direct Growth </p>
+                <p> 29.5% <span>(3Y)</span></p>
+            </div>
+        </div>
+        <div class="mutual-funds-gridR">
+            <img src="images/mutualFunds.svg" id = "MF-img">
+            <p> New to Mutual Funds? </p>
+            <p> Start exploring mutual funds to begin your investment journey </p>
+            <a > EXPLORE MUTUAL FUNDS </a>
+        </div>
+    </div>
+    <div id ="icon-headers" class = "icon-header-below">
+        <p> Handpicked Collections </p>
+    </div>
+   <div class="mutual-funds-in">
+        <div class="mutual-funds-gridL" id = "mf-below-icons">
+            <div>
+                <img src= "images/mf-icon-1.svg" id= "mf-icon-1">                <p> HIGH RETURN </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-2.svg" id= "mf-icon-2">
+                <p> TAX SAVING </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-3.svg" id= "mf-icon-3">
+                <p> BETTER THAN FD </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-4.svg" id= "mf-icon-4">
+                <p> TOP COMPANIES </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-5.svg" id= "mf-icon-5">
+                <p> SIP WITH ₹500 </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-6.svg" id= "mf-icon-6">
+                <p> SECTOR BETS </p>
+            </div>
+        </div>
+
+        <div class="mutual-funds-gridR" id = "mf-sip-card">
+            <img src="images/sip-icon.svg" id = "SIPimg">
+            <p> Have a SIP! </p>
+            <p> Start and manage monthly investments on Groww, simple and fast </p>
+            <a> START A SIP </a>
+        </div>
+        <div class="m-f-nutshell">
+            <div>
+                <img src="images/mf-nutshell-1.svg" id = "nutshell-1-image"> 
+                <p> IMPORTANT FUNDS </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-2.svg" id = "nutshell-2-image">
+                <p> SMART-SAVE </p>
+            </div>
+            <div> 
+                <img src="images/mf-nutshell-3.svg" id= "nutshell-3-image">
+                <p> SWITCH TO DIRECT </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-4.svg" id= "nutshell-4-image">
+                <p> LIVE INFO </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-5.svg" id= "nutshell-5-image">
+                <p> COMPARE FUNDS </p>
+            </div>
+        </div>
+   </div>
+    <!-- footer section showing the author and the copyright  -->
+    <footer>
+        <p style="text-align: center;"><small>Website Designed by Helih Tech</a><br>
+            Copyright by MEID &copy; 2024</small>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

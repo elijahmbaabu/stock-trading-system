@@ -1,0 +1,186 @@
+/* Main of desktop styles  */
+/* body styles  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg');
+    margin-top: 50px;
+}
+/* header styles */
+header {
+    background: black url(./images/bannerimage.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0;
+}
+/* navigation bar styles  */
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #135367;
+    color: #ffffff;
+}
+
+/* This element uses class to select a particular list item in the navbar depending on the current page */
+nav .right {
+    float: right;
+}
+/* this eleebt selects the active page among the navigation list using a class for more specificity.  */
+nav .active {
+    background-color: coral;
+    color: #000000;
+}
+
+nav {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+/* main section styles  */
+main {
+    padding: 20px;
+    width: 1000px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg');
+    margin-top: 20px;
+}
+/* since we have selected h1, I had to use a class to give different style to the main section headings different from the header styles */
+.heading1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* footer section styles  */
+footer {
+    background-color: #2d3437;
+    color: white;
+    padding: 20px;
+}
+/* table styles  */
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* button styles  */
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-size-adjust: 16px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+button[type=submit]{
+    background-color: green;
+}
+button[type=reset]{
+    background-color: red;
+}
+/* form styles  */
+form{
+    border: #c1c1c1 solid 5px;
+    padding: 20px;
+    margin: 10px;
+}
+/* This is used to target the used to target the input field for the form, specific inputs since we are not selecting all the input statements */
+.details{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #387ed1;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 3px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.landing-heading {
+    font-size: 44px;
+    color: #ffffff;
+}
+
+.landing-subheading {
+    font-size: 20px;
+    margin: 10px 0px 20px;
+    color: #ffffff;
+    /* padding: 0px; */
+}
+
+  
+
+
+
+

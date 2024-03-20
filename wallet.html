@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="wallet-style-sheet.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wallet </title>
+</head>
+
+<body class = "">
+        <!-- this code for top nav bar wirthen by helih tech  -->
+
+
+        <div id="nav_bar">
+            <div id="nav_bar_options">
+                <div id="nva_bar_explore">
+                    <p class="small_box_green">Explore</p>
+        
+                </div>
+                <div id="nva_bar_invest">
+                    <P>investments</P>
+                </div>
+    
+            </div>
+            
+            <div id="nva_bar_search">
+                <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+                <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+                </div>
+    
+            </div>
+            <div id="nva_bar_icons">
+                <div id="nva_bar_icons_bell">
+                <img src="images\alarm.png">
+                </div>
+                <div id="nva_bar_icons_wallet">
+                    <img src="images\wallet.png">
+    
+                </div>
+                <div id="nva_bar_icons_">
+                    <img src="images\shopping-cart-empty-side-view.png">
+                </div>
+            </div>
+            <div id="nva_bar_account">
+                <div id="nva_bar_icons_dp" >
+                    <img id = 'user_image'src="images\dp.jpeg">
+        
+                    </div>
+                <div id="info" >
+                   <div id = 'use_info'>
+                       <div id = 'user_img'>
+                           <img src='images/dp.jpeg' id="users_dp" alt="user image">
+                       </div>
+                       <div id = 'user_details'>
+                           <p id ='user_name'>Elijah Mbaabu</p>
+                           <p id = 'user_email'>elijahmbaabu1@gmail.com</p>
+                       </div>
+    
+                   </div>
+                   <div id = 'info_list'>
+    
+                    <div id = 'bank'>
+                        <div id= 'bank_logo' class= 'info_img'>
+                         <img src = "images\museum.png">
+                        </div>
+                        <div>
+                            <p class="info_p">Bank & AutoPay</p>
+     
+                        </div>
+     
+                     </div>  
+                      <div id = 'infor_import'>
+                         <div id= 'import_logo' class= 'info_img'>
+                          <img src = "images\folder.png">
+                         </div>
+                         <div>
+                             <p class="info_p" >Import Funds</p>
+      
+                         </div>
+     
+                     </div>
+                     <div id = 'info_watchlist'>
+                             <div id= 'watchlist_logo' class= 'info_img'>
+                              <img src = "images\bookmark.png">
+                             </div>
+                             <div>
+                                 <p class="info_p">Watchlist</p> 
+          
+                             </div>
+                     </div>
+     
+                      <div id = 'info_orders'>
+                                 <div id= 'order_logo' class= 'info_img'>
+                                  <img src = "images\page.png">
+                                 </div>
+                                 <div>
+                                     <p class="info_p"> Orders</p>
+              
+                                 </div>
+                      </div>
+     
+                     <div id = 'info_sips'>
+                                     <div id= 'sips_logo' class= 'info_img'>
+                                      <img src = "images\calendar.png">
+                                     </div>
+                                     <div>
+                                         <p class="info_p">SIPs </p>
+                  
+                                     </div>
+                     </div>
+     
+                     <div id = 'info_help'>
+                                         <div id= 'help_logo' class= 'info_img'>
+                                          <img src = "images\phone.png">
+                                         </div>
+                                         <div>
+                                             <p class="info_p">Help & Support </p>
+                      
+                                         </div>
+                     </div>
+                         <div id = 'info_settings'>
+                                             <div id= 'settings_logo' class= 'info_img'>
+                                              <img src = "images\settings.png">
+                                             </div>
+                                             <div>
+                                                 <p class="info_p"> Settings</p>
+                          
+                                             </div>
+                          </div>
+                         <div id = 'dark_mode' onclick = 'dark()'>
+                                                 <div  class= 'info_img'>
+                                                  <img src = "images\night-mode.png">
+                                                 </div>
+                                                 <div>
+                                                     <p class="info_p"> Dark Mode</p>
+                              
+                                                 </div>
+                         </div>
+                             <div id = 'logout'>
+                                  <div  class= 'info_img'>
+                                   <img src = "images\in.png">
+                                  </div>
+                             <div >
+                                  <p class="info_p"> Log Out</p>
+                                  
+                                 </div>
+                              </div>
+    
+                   </div>
+    
+                   </div>
+    
+                </div>
+               
+    
+            </div>
+           
+        <!-- this code for top nav bar wirthen by helih tech  --- end-->
+    <div id="wallet-container">
+        <div id="wallet-display">
+            <div id = 'wallet-display-top'>
+                <p> BALANCE AVAILABLE </p>
+                <h1 id="wallet-value"> </h1>
+            </div>
+            <div class = "wallet-below-header">
+                <p> Details </p>
+            </div>
+
+            <div id = "wallet-display-below">
+                <div >
+                    <div>
+                        <p id = '---'> Closing Balance(CB): </p>
+                    </div>
+                    <div>
+                        <p id = "cbWallet"> 0.00 </p>
+                    </div>
+                </div>
+                <div>
+                    <p id = '---'> Ongoing Transactions: </p>
+                    <p>0.00</p>
+                </div>
+                <div>
+                    <p id = '---'> Balance Available: </p>
+                    <p id = 'baWallet'>0.00</p>
+                </div>
+            </div>
+        </div>
+        <div id="wallet-top-up">
+            <div class = "wallet-top-up-header">
+                <p> DEPOSIT </p>
+            </div>
+            <div id = "wallet-top-up-value">
+                <div id="wallet-value-inp">
+                    <p>Enter Amount </p>
+                    <p id = "permPlaceHolder">$</p>
+                    <input type="text" id="wallet-value-inputBox" placeholder="0" >
+                </div>
+            </div>
+
+            <div class="top-up-btn">
+                <button onclick="plusHundred()"> +$100 </button>
+                <button onclick="plusFiveHundred()"> +$500 </button>
+            </div>
+            <hr id = "hr">
+            <div id = "wallet-top-up-below">
+                <p> Pay Using: </p>
+                <a href=""> More Options </a>
+            </div>
+            <div id = "wallet-id-input">
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/upi_icon.fa375ebf.svg" alt="">
+                <input type="text" name="" id="wallet-upi-inp" placeholder="Enter UPI ID">
+            </div>
+            <div id = "nonVisibleP">
+                <p id = "nonVisP"> Successfull !!</p>
+            </div>
+            <button onclick="deposite()" id = "deposite-btn"> DEPOSIT MONEY </button>
+        </div>
+    </div>
+</div>
+    <!-- footer section showing the author and the copyright  -->
+    <footer>
+        <p style="text-align: center;"><small>Website Designed by Helih Tech</a><br>
+            Copyright by MEID &copy; 2024</small>
+        </p>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="wallet.js"></script>
